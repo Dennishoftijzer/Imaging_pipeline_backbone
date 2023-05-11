@@ -73,6 +73,7 @@ The output of the model deployment is in the [`exported_model`](ConcreteProducts
     - It is recommended to comment out the `sys.settrace(trace)` and `sys.settrace(None)` in [`Client_code.py`](Client_code.py) when using the VS code debugger.
 - The [`Factories`](Factories) folder contains all the concrete factory classes (2D, 3D, thermography) in their respective files. All abstract classes are located in ['Abstract_factory_and_products.py'](Factories/Abstract_factory_and_products.py)
 - 2D and 3D concrete products are not implemented and located in [`Empty_products_2D.py`](ConcreteProducts/Empty_products_2D.py) and [`Empty_products_3D.py`](ConcreteProducts/Empty_products_3D.py) respectively. The ['Thermography subfolder'](ConcreteProducts/Thermography) contains all thermography concrete products as well as the defect detection detectron2 model.
+- You can find the output in the ['DefectDetected_images'](Working_directory/DefectDetected_images) folder.
 
 ## Parameters
 Parameters for the entire pipeline are loaded via a JSON file when instantiating a factory object. An example file is shown in [`Example_parameter_file_thermography.JSON`](Example_parameter_file_thermography.JSON) for the thermography pipeline.
