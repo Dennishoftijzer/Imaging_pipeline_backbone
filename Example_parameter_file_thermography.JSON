@@ -1,0 +1,27 @@
+[
+    {    
+    "Module_name": "Acquisition",
+    "Image_directory" : "./Example_images"
+},
+
+{    
+    "Module_name": "IQA",
+    "Brisque_threshold" : 70
+},
+
+{    
+    "Module_name": "Preprocessing",
+    "filter_size": 3
+},
+
+{    
+    "Module_name": "Enrichment"
+},
+
+{    
+    "Module_name": "DefectDetection",
+    "Modelpath"  : "./ConcreteProducts/Thermography/Defect_detection_model/exported_model/model.ts",
+    "defect_detection_thresh" : 0.7
+}
+
+]

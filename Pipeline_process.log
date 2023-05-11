@@ -1,0 +1,16 @@
+2023-05-11 09:38:05 - INFO - Factories.Abstract_factory_and_products - ParameterPath: Example_parameter_file_thermography.JSON
+2023-05-11 09:38:05 - INFO - Factories.Abstract_factory_and_products - WorkingDirectory: ./Working_directory
+2023-05-11 09:38:05 - INFO - Creating Thermography Pipeline!
+2023-05-11 09:38:05 - INFO - ConcreteProducts.Thermography.Acquisition_thermo_PassImages - 6 images loaded from ./Example_images
+2023-05-11 09:38:05 - INFO - ConcreteProducts.Thermography.IQA_thermo - 6 images loaded from ./Working_directory\1.Acquired_images
+2023-05-11 09:38:05 - INFO - ConcreteProducts.Thermography.IQA_thermo - Assessing the images..., images with a BRISQUE score lower than 70 will pass
+2023-05-11 09:38:06 - INFO - ConcreteProducts.Thermography.IQA_thermo - Calculated 6 BRISQUE scores, 6 of 6 images passed the threshold, 
+2023-05-11 09:38:06 - INFO - ConcreteProducts.Thermography.IQA_thermo - 2 of 2 composite images passed
+2023-05-11 09:38:06 - INFO - ConcreteProducts.Thermography.Preprocess_thermo - 6 images loaded from ./Working_directory\2.IQA_images
+2023-05-11 09:38:06 - INFO - ConcreteProducts.Thermography.Preprocess_thermo - Preprocess step 1 done! - Slight median blur - No. images: 6
+2023-05-11 09:38:06 - INFO - ConcreteProducts.Thermography.Preprocess_thermo - Preprocess step 2 done! - Interquirtile range (IQR) outlier removal - No. images: 6
+2023-05-11 09:38:06 - INFO - ConcreteProducts.Thermography.Preprocess_thermo - Preprocess step 3 done! - Pixel intesity scaling - No. images: 6
+2023-05-11 09:38:07 - INFO - ConcreteProducts.Thermography.Enrichment_thermo - 6 images loaded from ./Working_directory\3.Preprocessed_images
+2023-05-11 09:38:07 - INFO - ConcreteProducts.Thermography.Enrichment_thermo - 6 grayscale images merged to 2 RGB images!
+2023-05-11 09:38:07 - INFO - ConcreteProducts.Thermography.DefectDetection_thermo - 2 images loaded from ./Working_directory\4.Enrichment_images
+2023-05-11 09:38:08 - INFO - ConcreteProducts.Thermography.DefectDetection_thermo - Defect detection model loaded from ./ConcreteProducts/Thermography/Defect_detection_model/exported_model/model.ts
